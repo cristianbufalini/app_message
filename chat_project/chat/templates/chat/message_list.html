@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+</head>
+<body>
+    <h1>Chat Messages</h1>
+    <ul>
+        {% for message in messages %}
+            <li>{{ message.user }}: {{ message.content }} - {{ message.timestamp }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
